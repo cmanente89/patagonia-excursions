@@ -1,0 +1,45 @@
+:root {
+  --color-1: #1d1e25;
+  --color-2: #4c4e57;
+  --color-3: #7b7d8e;
+  --color-4: #a4a6b7;
+  --color-5: #f8f9fc;
+}
+
+body {
+  background-color: var(--color-1);
+  color: var(--color-5);
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-1);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-2);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-3);
+}
+
+/* Translucent Glassmorphism Elements */
+.glass-nav {
+  background: rgba(29, 30, 37, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.glass-card {
+  background: rgba(76, 78, 87, 0.22);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(164, 166, 183, 0.16);
+}
